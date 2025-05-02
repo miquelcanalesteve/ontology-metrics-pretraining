@@ -1,0 +1,6 @@
+{
+    "rdf": ["type", "Property", "Statement", "subject", "predicate", "object", "Bag", "Seq", "Alt", "value", "List", "first", "rest", "nil", "XMLLiteral", "HTML", "langString"],
+    "rdfs": ["Class", "subClassOf", "subPropertyOf", "domain", "range", "label", "comment", "isDefinedBy", "seeAlso", "Literal", "Datatype", "Container", "ContainerMembershipProperty", "Resource"],
+    "owl": ["Class", "Thing", "Nothing", "Restriction", "ObjectProperty", "DatatypeProperty", "AnnotationProperty", "Ontology", "OntologyProperty", "AllDifferent", "AllDisjointClasses", "allValuesFrom", "someValuesFrom", "hasValue", "intersectionOf", "unionOf", "complementOf", "oneOf", "disjointWith", "equivalentClass", "equivalentProperty", "sameAs", "differentFrom", "inverseOf", "cardinality", "minCardinality", "maxCardinality", "qualifiedCardinality", "minQualifiedCardinality", "maxQualifiedCardinality", "onProperty", "onClass", "onDataRange", "hasSelf", "members", "disjointUnionOf", "imports", "versionInfo", "priorVersion", "backwardCompatibleWith", "incompatibleWith", "deprecated"],
+    "xsd": ["string", "boolean", "decimal", "integer", "float", "double", "date", "dateTime", "time", "duration", "gYear", "gMonth", "anyURI", "nonNegativeInteger", "positiveInteger", "nonPositiveInteger", "negativeInteger"]
+}
