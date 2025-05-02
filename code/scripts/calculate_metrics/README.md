@@ -24,6 +24,7 @@ The following metrics are computed in both dataset and LLM evaluations:
 - **Sentence Uniqueness Ratio**: Ratio of unique RDF/OWL triple-like sentences.
 - **Line Uniqueness Ratio**: Ratio of unique text lines.
 - **Brunet Index**: Lexical diversity score adapted for semantic tokens.
+- **Ontology Reference Index**: A combined weighted score that integrates all normalized metrics (density, diversity, uniqueness, and inverse Brunet Index) to provide a single comparative measure of ontology quality relative to the dataset or LLM outputs.
 
 ---
 
