@@ -47,8 +47,8 @@ def vocab_specific_diversity(text, vocab):
     used_vocab_terms = {tok for tok in tokens if tok in vocab}
     return len(used_vocab_terms) / len(vocab) if vocab else 0
 
-# === Metric: Unique sentence (triple) ratio ===
-def sentence_uniqueness_ratio(text):
+# === Metric: Unique Logical Block ratio ===
+def logical_block_uniqueness_ratio(text):
     lines = [line.strip() for line in text.splitlines() if line.strip() and not line.strip().startswith("#") and not line.strip().startswith("@")]
     combined_text = " ".join(lines)
     literals = {}
@@ -91,7 +91,7 @@ def compute_ontology_reference_index(
     columns_to_normalize = [
         'vocab_specific_density',
         'vocab_specific_diversity',
-        'sentence_uniqueness_ratio',
+        'logical_block_uniqueness_ratio',
         'line_uniqueness_ratio',
         'brunet_index'
     ]
@@ -112,26 +112,26 @@ def compute_ontology_reference_index(
     # Extract base model metrics
     base_model_vocab_specific_density_per_line = df_llm["vocab_specific_density"].iloc[0]
     base_model_vocab_specific_diversity = df_llm["vocab_specific_diversity"].iloc[0]
-    base_model_sentence_uniqueness_ratio = df_llm["sentence_uniqueness_ratio"].iloc[0]
+    base_model_logical_block_uniqueness_ratio = df_llm["logical_block_uniqueness_ratio"].iloc[0]
     base_model_line_uniqueness_ratio = df_llm["line_uniqueness_ratio"].iloc[0]
     base_model_brunet_index = df_llm["brunet_index"].iloc[0]
 
     # Best metrics from dataset
     best_onto_vocab_specific_density_per_line = df_dataset["vocab_specific_density"].max()
     best_onto_vocab_specific_diversity = df_dataset["vocab_specific_diversity"].max()
-    best_onto_sentence_uniqueness_ratio = df_dataset["sentence_uniqueness_ratio"].max()
+    best_onto_logical_block_uniqueness_ratio = df_dataset["logical_block_uniqueness_ratio"].max()
     best_onto_line_uniqueness_ratio = df_dataset["line_uniqueness_ratio"].max()
     best_onto_brunet_index = df_dataset["brunet_index"].min()
 
     # Calculate gains
-    gain_sentence_uniqueness_ratio = best_onto_sentence_uniqueness_ratio / base_model_sentence_uniqueness_ratio
+    gain_logical_block_uniqueness_ratio = best_onto_logical_block_uniqueness_ratio / base_model_logical_block_uniqueness_ratio
     gain_line_uniqueness_ratio = best_onto_line_uniqueness_ratio / base_model_line_uniqueness_ratio
     gain_brunet_index = base_model_brunet_index / best_onto_brunet_index
     gain_vocab_specific_density_per_line = best_onto_vocab_specific_density_per_line / base_model_vocab_specific_density_per_line
     gain_vocab_specific_diversity = best_onto_vocab_specific_diversity / base_model_vocab_specific_diversity
 
     sum_of_gains = (
-        gain_sentence_uniqueness_ratio +
+        gain_logical_block_uniqueness_ratio +
         gain_line_uniqueness_ratio +
         gain_brunet_index +
         gain_vocab_specific_density_per_line +
@@ -139,7 +139,7 @@ def compute_ontology_reference_index(
     )
 
     # Calculate weights
-    weight_sentence_uniqueness_ratio = gain_sentence_uniqueness_ratio / sum_of_gains
+    weight_logical_block_uniqueness_ratio = gain_logical_block_uniqueness_ratio / sum_of_gains
     weight_line_uniqueness_ratio = gain_line_uniqueness_ratio / sum_of_gains
     weight_brunet_index = gain_brunet_index / sum_of_gains
     weight_vocab_specific_density_per_line = gain_vocab_specific_density_per_line / sum_of_gains
@@ -174,7 +174,7 @@ def compute_ontology_reference_index(
             weight_brunet_index * final_df.at[k, "inv_norm(brunet_index)"] +
             weight_vocab_specific_density_per_line * final_df.at[k, "norm(vocab_specific_density)"] +
             weight_vocab_specific_diversity * final_df.at[k, "norm(vocab_specific_diversity)"] +
-            weight_sentence_uniqueness_ratio * final_df.at[k, "norm(sentence_uniqueness_ratio)"] +
+            weight_logical_block_uniqueness_ratio * final_df.at[k, "norm(logical_block_uniqueness_ratio)"] +
             weight_line_uniqueness_ratio * final_df.at[k, "norm(line_uniqueness_ratio)"]
         )
 

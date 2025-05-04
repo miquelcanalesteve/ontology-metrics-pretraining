@@ -6,7 +6,7 @@ from metrics import (
     count_llm_tokens,
     vocab_specific_density,
     vocab_specific_diversity,
-    sentence_uniqueness_ratio,
+    logical_block_uniqueness_ratio,
     line_uniqueness_ratio,
     brunet_index
 )
@@ -35,7 +35,7 @@ def analyze_all_ttl_files(input_folder, output_excel_path, vocab, tokenizer=None
                     "llm_token_count": count_llm_tokens(text, tokenizer),
                     "vocab_specific_density": vocab_specific_density(text, vocab),
                     "vocab_specific_diversity": vocab_specific_diversity(text, vocab),
-                    "sentence_uniqueness_ratio": sentence_uniqueness_ratio(text),
+                    "logical_block_uniqueness_ratio": logical_block_uniqueness_ratio(text),
                     "line_uniqueness_ratio": line_uniqueness_ratio(text),
                     "brunet_index": brunet_index(text),
                 })

@@ -9,7 +9,7 @@ This repository contains Python scripts to compute various metrics on ontologies
 | File                  | Purpose                                                                                                                                       |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | `metrics.py`          | Defines core metric functions (e.g., token counts, lexical diversity, uniqueness ratios) and the ORI computation logic.                        |
-| `dataset_metrics.py`  | Computes all metrics for a folder of `.ttl` ontology files and outputs the results to an Excel file.                                           |
+| `dataset_metrics.py`  | Computes all metrics for a folder of `.ttl` ontology files and outputs the results to an Excel file. **Important:** You must set your *tokenizer* inside this script to ensure correct token counts.                                         |
 | `llm_metrics.py`      | Computes the global average metrics over all `generated_text` entries in a JSON file of LLM outputs and saves the result to Excel.         |
 | `ori.py`              | Runs the ORI calculation, combining dataset and LLM metrics, and outputs an Excel file with the final ORI scores. **Important:** You must set `applied_to` to `"dataset"` or `"llm"` depending on what you want to score. |
 
@@ -21,7 +21,7 @@ The following metrics are computed in both dataset and LLM evaluations:
 - **LLM Token Count**: Number of tokens based on the provided LLM tokenizer.
 - **Vocabulary-Specific Density**: Density of occurrences from a predefined vocabulary within the text, measured per line.
 - **Vocabulary-Specific Diversity**: Diversity of distinct vocabulary terms used relative to the total vocabulary.
-- **Sentence Uniqueness Ratio**: Ratio of unique RDF/OWL triple-like sentences.
+- **Logical Block Uniqueness Ratio**: Ratio of unique RDF/OWL logical block.
 - **Line Uniqueness Ratio**: Ratio of unique text lines.
 - **Brunet Index**: Lexical diversity score adapted for semantic tokens.
 - **Ontology Reference Index**: A combined weighted score that integrates all normalized metrics (density, diversity, uniqueness, and inverse Brunet Index) to provide a single comparative measure of ontology quality relative to the dataset or LLM outputs.

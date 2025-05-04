@@ -3,10 +3,9 @@ import json
 import pandas as pd
 from transformers import AutoTokenizer
 from metrics import (
-    count_llm_tokens,
     vocab_specific_density,
     vocab_specific_diversity,
-    sentence_uniqueness_ratio,
+    logical_block_uniqueness_ratio,
     line_uniqueness_ratio,
     brunet_index
 )
@@ -19,7 +18,7 @@ def load_vocab(json_path="vocab.json"):
     return vocab
 
 # === Analyze generated_text values and compute global average ===
-def analyze_generated_texts_global_average(input_json_path, output_excel_path, vocab, tokenizer=None):
+def analyze_generated_texts_global_average(input_json_path, output_excel_path, vocab):
     with open(input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -30,7 +29,7 @@ def analyze_generated_texts_global_average(input_json_path, output_excel_path, v
             result = {
                 "vocab_specific_density": vocab_specific_density(text, vocab),
                 "vocab_specific_diversity": vocab_specific_diversity(text, vocab),
-                "sentence_uniqueness_ratio": sentence_uniqueness_ratio(text),
+                "logical_block_uniqueness_ratio": logical_block_uniqueness_ratio(text),
                 "line_uniqueness_ratio": line_uniqueness_ratio(text),
                 "brunet_index": brunet_index(text),
             }
@@ -38,7 +37,7 @@ def analyze_generated_texts_global_average(input_json_path, output_excel_path, v
             print(f"Error processing {key}: {e}")
             result = {metric: None for metric in [
                 "llm_token_count", "vocab_specific_density", "vocab_specific_diversity",
-                "sentence_uniqueness_ratio", "line_uniqueness_ratio", "brunet_index"
+                "logical_block_uniqueness_ratio", "line_uniqueness_ratio", "brunet_index"
             ]}
 
         results.append(result)
@@ -61,9 +60,4 @@ if __name__ == "__main__":
     output_excel = "/app/outputs/llm_metrics.xlsx"
     vocab = load_vocab("vocab.json")
 
-    tokenizer = AutoTokenizer.from_pretrained(
-        "meta-llama/Llama-3.2-1B",
-        use_auth_token="your_token"
-    )
-
-    analyze_generated_texts_global_average(input_json, output_excel, vocab, tokenizer)
+    analyze_generated_texts_global_average(input_json, output_excel, vocab)

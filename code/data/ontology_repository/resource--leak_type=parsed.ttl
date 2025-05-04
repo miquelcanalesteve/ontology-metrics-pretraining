@@ -1,0 +1,538 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://purl.org/dc/terms/> .
+
+<http://data.ontotext.com/resource/leak/>
+    :created "2016-05-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    :creator <http://www.ontotext.com> ;
+    :source <https://offshoreleaks.icij.org/pages/database> ;
+    :subject <http://dbpedia.org/resource/Money_laundering>, <http://dbpedia.org/resource/Offshore_company>, <http://dbpedia.org/resource/Tax_evasion> ;
+    <http://rdfs.org/ns/void#sparqlEndpoint> <http://data.ontotext.com/sparql> ;
+    a <http://www.w3.org/2002/07/owl#Ontology> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the ICIJ Offshore Leaks database released on 2016-05-10"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Offshore Leaks ontology"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leaks>, <https://github.com/Ontotext-AD/leaks>, <https://offshoreleaks.icij.org/> .
+
+<http://data.ontotext.com/resource/leak/AGENT_OF>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/AUTHORIZED_REPRESENTATIVE>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Address>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Country>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/DIRECTOR>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/EXECUTIVE>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Edge>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Entity>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Intermediary>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/NOMINEE>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Node>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/OFFICER>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/OWNER>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/Officer>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/OffshoreJurisdiction>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/REAL_OWNER>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/RELATED>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/RELATED_AGENT>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/SAME>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/SERVICE_PROVIDER>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/address>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/company_type>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/countries>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/countryCode>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/country_codes>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/dorm_date>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/former_name>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/hasCountry>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/hasJurisdiction>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/hasRegisteredAddress>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/ibcRUC>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/icij_id>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/inactivation_date>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/incorporation_date>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/internal_id>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAlternateDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAppointorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAssistantSecretaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAuditorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAuthRepresentativeOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAuthorisedPersonSignatoryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isAuthorizedSignatoryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isBankSignatoryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isBeneficialOwnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isBeneficiaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isBeneficiaryShareholderAndDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isBoardRepresentativeOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isChairmanOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isCo-TrusteeOfTrustOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isConnectedOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isCorrespondentAddrOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isCustodianOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isDirectorAndShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isDirectorBeneficialOwnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isDirectorShareholderBeneficialOwnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isDirectorShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isDirector_RamiMakhlouf_Of>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isFirstBeneficiaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isGeneralAccountantOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isGranteeOfAMortgageOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isIntermediaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isInvestmentAdvisorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isJointSettlorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isLegalAdvisorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isMemberOfFoundationCouncilOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isMemberShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNominatedPersonOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeBeneficialOwnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeBeneficiaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeInvestmentAdvisorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeNameOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeProtectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeSecretaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isNomineeTrustSettlorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isOfficerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isOwnerDirectorAndShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isOwnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPartnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPersonalDirectorshipOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPowerOfAttorneyOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPowerOfAttorneyShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPresident-DirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPresidentAndDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPresidentOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isPrincipalBeneficiaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isProtectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isRecordsAndRegistersOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isRegisterOfDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isRegisterOfShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isReserveDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isResidentDirectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSafekeepingOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSecretaryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isShareholder_ThroughJulexFoundation_Of>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSignatoryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSoleShareholderOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSoleSignatoryBeneficialOwnerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSoleSignatoryOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isStockbrokerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isSuccessorProtectorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isTaxAdvisorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isTreasurerOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isTrustSettlorOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isTrusteeOfTrustOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isUnitTrustRegisterOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/isVicePresidentOf>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/jurisdiction>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/jurisdictionCode>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/jurisdiction_description>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/name>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/node_1>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/node_2>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/node_id>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/note>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/original_name>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/rel_type>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/relatedEntity>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/sameAddressAs>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/sameNameAndRegistrationDateAs>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/service_provider>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/similarNameAndAddressAs>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/sourceID>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/sourceNode>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/status>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/struck_off_date>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/targetNode>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
+<http://data.ontotext.com/resource/leak/valid_until>
+    <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.ontotext.com/resource/leak/> ;
+    <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.ontotext.com/resource/leak/> .
+
