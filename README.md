@@ -70,6 +70,6 @@ Run `ori.py` to combine dataset and LLM metrics into the **Ontology Reference In
 
 ## ⚠ Disclaimer
 
-The three sample ontologies included in the `code/data` folder are **for demonstration only**. While you can run the full pipeline on these examples, the ORI values will **not match** the main results because the normalization step depends on the full dataset (1766 ontologies from DBpedia Archivo). The `outputs` folder inside `code/` contains example results computed only on these samples and the generated LLM outputs. These are intended for testing and illustration, not for full-scale evaluation.
+The three sample ontologies included in the `code/data` folder are **for demonstration only**. While you can run the full pipeline on these examples, the ORI values will **not match** the main results because the normalization step depends on the full dataset (1766 ontologies from DBpedia Archivo). The `outputs` folder inside `code/` contains example results computed only on these samples and the generated LLM outputs. These are intended for testing and illustration, not for full-scale evaluation. You can see the results with the 1766 ontologies in the folder `results`.
 
 ---
